@@ -1,4 +1,4 @@
-node('kube_runner') {
+node('image_builder') {
 	stage('cloning git repo') {
 		//cleanWs()
 		    dir('DEployment_Test') {
