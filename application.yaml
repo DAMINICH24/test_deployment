@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: khushiporwal/sample-app:41
+          image: khushiporwal/sample-app:42
           ports:
             - containerPort: 80
 ---
@@ -30,6 +30,7 @@ spec:
     - port: 80
   selector:
     app: nginx-project
+
 
 
 
