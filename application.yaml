@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-test
-  namespace: flux-system
+  namespace: default
 spec:
   replicas: 3
   selector:
@@ -12,21 +12,3 @@ spec:
     metadata:
       labels:
         app: nginx-project
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: nginx-project
-  namespace: flux-system
-spec:
-  type: LoadBalancer
-  ports:
-    - port: 80
-  selector:
-    app: nginx-project
-
-
-
-
-
-
